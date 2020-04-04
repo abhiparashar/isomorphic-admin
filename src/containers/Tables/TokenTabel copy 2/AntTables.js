@@ -21,10 +21,9 @@ export default function AntTable() {
       case 'editView':
         Component = TableViews.EditView;
         break;
-      case 'token':
-        Component = TableViews.TokenView;
+      case 'kyc':
+        Component = TableViews.CustomizedView;
         break;
-      
       default:
         Component = TableViews.SimpleView;
     }

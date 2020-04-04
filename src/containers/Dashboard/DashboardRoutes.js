@@ -52,8 +52,24 @@ const routes = [
     component: lazy(() => import('@iso/containers/Map/Leaflet/Leaflet')),
   },
   {
-    path: 'table_ant',
+    path: 'whitelist-service',
     component: lazy(() => import('@iso/containers/Tables/AntTables/AntTables')),
+  },
+  {
+    path: 'token-service',
+    component: lazy(() => import('@iso/containers/Tables/TokenTabel/AntTables')),
+  },
+  {
+    path: 'kyc-service',
+    component: lazy(() => import('@iso/containers/Tables/TokenTabel/AntTables')),
+  },
+  {
+    path: 'profile-service',
+    component: lazy(() => import('@iso/containers/Tables/TokenTabel/AntTables')),
+  },
+  {
+    path: 'messaging-service',
+    component: lazy(() => import('@iso/containers/Tables/TokenTabel/AntTables')),
   },
   {
     path: 'allFormComponent',

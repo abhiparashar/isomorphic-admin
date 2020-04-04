@@ -1,0 +1,251 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "messageService",
+    "description": "Microservice for user message",
+    "version": "1.1.0"
+  },
+  "components": {},
+  "servers": [
+    {
+      "url": "http://13.235.229.191:3007/"
+    }
+  ],
+  "paths": {
+    "/api/message": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "Successful response",
+                  "type": "object",
+                  "properties": {
+                    "statusCode": {
+                      "type": "number"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "description": "Successful response"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "Internal Server Error",
+                  "type": "object",
+                  "properties": {
+                    "statusCode": {
+                      "type": "number"
+                    },
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "description": "Internal Server Error"
+          }
+        },
+        "summary": "Creates Message",
+        "description": "Create Message",
+        "tags": ["message"],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "from": {
+                    "description": "Email of the sender",
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "to": {
+                    "type": "object",
+                    "properties": {
+                      "userID": {
+                        "description": " Receiver user id",
+                        "type": "string",
+                        "minLength": 3
+                      },
+                      "email": {
+                        "description": "Email of the receiver",
+                        "type": "string",
+                        "format": "email"
+                      }
+                    },
+                    "additionalProperties": false,
+                    "patterns": [],
+                    "required": ["userID", "email"]
+                  },
+                  "message": {
+                    "description": "Message",
+                    "type": "string"
+                  },
+                  "sms": {
+                    "description": "Option to send message as sms",
+                    "type": "boolean"
+                  },
+                  "mail": {
+                    "description": "Option to send message as mail",
+                    "type": "boolean"
+                  },
+                  "notification": {
+                    "description": "Option to send message as notification",
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false,
+                "patterns": [],
+                "required": ["from", "message"]
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "from": {
+                    "description": "Email of the sender",
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "to": {
+                    "type": "object",
+                    "properties": {
+                      "userID": {
+                        "description": " Receiver user id",
+                        "type": "string",
+                        "minLength": 3
+                      },
+                      "email": {
+                        "description": "Email of the receiver",
+                        "type": "string",
+                        "format": "email"
+                      }
+                    },
+                    "additionalProperties": false,
+                    "patterns": [],
+                    "required": ["userID", "email"]
+                  },
+                  "message": {
+                    "description": "Message",
+                    "type": "string"
+                  },
+                  "sms": {
+                    "description": "Option to send message as sms",
+                    "type": "boolean"
+                  },
+                  "mail": {
+                    "description": "Option to send message as mail",
+                    "type": "boolean"
+                  },
+                  "notification": {
+                    "description": "Option to send message as notification",
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false,
+                "patterns": [],
+                "required": ["from", "message"]
+              }
+            }
+          },
+          "required": true
+        }
+      }
+    },
+    "/api/message/list": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "Successful response",
+                  "type": "object",
+                  "properties": {
+                    "_id": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "description": "Successful response"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "Internal Server Error",
+                  "type": "object",
+                  "properties": {
+                    "statusCode": {
+                      "type": "number"
+                    },
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "description": "Internal Server Error"
+          }
+        },
+        "summary": "Get Message",
+        "description": "Get Message",
+        "tags": ["message"],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "description": "User Email",
+                    "type": "string",
+                    "format": "email"
+                  }
+                },
+                "additionalProperties": false,
+                "patterns": [],
+                "required": ["email"]
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "description": "User Email",
+                    "type": "string",
+                    "format": "email"
+                  }
+                },
+                "additionalProperties": false,
+                "patterns": [],
+                "required": ["email"]
+              }
+            }
+          },
+          "required": true
+        }
+      }
+    }
+  }
+}

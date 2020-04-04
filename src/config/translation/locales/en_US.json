@@ -582,5 +582,10 @@
   "Swiper.lazy.lazyTitle": "Slider with Lazyload",
   "Swiper.custom.customScrollTitle": "Custom view with all Naviation",
   "Swiper.custom.basicNavTitle": "Basic Naviation",
-  "Swiper.custom.buttonNavTitle": "Custom Naviation"
+  "Swiper.custom.buttonNavTitle": "Custom Naviation",
+  "sidebar.tokenService":"Token Service",
+  "sidebar.whitelistService": "Whitelist Service",
+  "sidebar.kycService": "KYC Service",
+  "sidebar.profileService": "Profile Service",
+  "sidebar.messagingService": "Messaging Service"
 }

@@ -119,7 +119,7 @@ const tableinfos = [
   // },
   {
     title: "Customized View",
-    value: "token",
+    value: "kyc",
     columns: clone(columns)
   }
 
