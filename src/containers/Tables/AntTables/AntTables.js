@@ -6,7 +6,7 @@ import fakeData from '../data';
 import { tableinfos } from './configs';
 import * as TableViews from './TableViews/TableViews';
 
-const dataList = new fakeData(10);
+const dataList = new fakeData(1);
 
 export default function AntTable() {
   function renderTable(tableInfo) {

@@ -538,7 +538,7 @@
   "checkout.billingform.addressoptional": "Apartment   suite   unit etc. (optional",
   "checkout.billingform.checkbox": "Create an account?",
   "antTable.title.image": "Image",
-  "antTable.title.MicroservicesName": "Microservices Name",
+  "antTable.title.MicroservicesName": "Microservices",
   "antTable.title.Request": "Request",
   "antTable.title.API": "API",
   "antTable.title.street": "Street",

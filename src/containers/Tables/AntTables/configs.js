@@ -54,12 +54,12 @@ const columns = [
   //   width: 200,
   //   render: object => renderCell(object, "TextCell", "street")
   // },
-  {
-    title: <IntlMessages id='antTable.title.URL' />,
-    key: "email",
-    width: 200,
-    render: object => renderCell(object, "TextCell", "URL")
-  }
+  // {
+  //   title: <IntlMessages id='antTable.title.URL' />,
+  //   key: "email",
+  //   width: 200,
+  //   render: object => renderCell(object, "TextCell", "URL")
+  // }
   // {
   //   title: <IntlMessages id='antTable.title.dob' />,
   //   key: "date",

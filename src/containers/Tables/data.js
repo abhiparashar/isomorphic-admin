@@ -15,14 +15,15 @@ const tableData = JSON.parse(
   "companyName": "Kessler LLC",
   "words": "dignissimos et natus",
   "sentence": "Illum molestiae saepe eaque odit magnam veritatis eligendi est qui."
-}, {
+}, 
+{
   "id": 1,
   "key": 1,
   "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/jnmnrd/128.jpg",
-  "API": "http://13.235.229.191:3007/docs/",
-  "URL": "/api/message/list",
-  "MicroservicesName": "MS-messageService",
-  "Request": "POST",
+  "city": "Sibylside",
+  "email": "Ransom.Bergstrom@gmail.com",
+  "firstName": "Rahul",
+  "lastName": "Funk",
   "street": "Lyla Heights",
   "zipCode": "64903",
   "date": "2016-10-08T06:30:16.347Z",
