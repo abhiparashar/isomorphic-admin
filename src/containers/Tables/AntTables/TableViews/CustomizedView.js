@@ -2,11 +2,11 @@ import React from "react";
 import TableWrapper, { CustomizedTableWrapper } from "../AntTables.styles";
 import Switch from "@iso/components/uielements/switch";
 import Form from "@iso/components/uielements/form";
-import Demo from "./Form";
+import Swagger from "./Swagger";
 
 const FormItem = Form.Item;
 
-const expandedRowRender = record => <Demo />;
+const expandedRowRender = record => <Swagger />;
 
 const title = () => "Here is title";
 const showHeader = true;
@@ -101,7 +101,7 @@ export default function(props) {
         columns={props.tableInfo.columns}
         dataSource={props.dataList.getAll()}
         className='isoCustomizedTable'>
-        <Demo />
+        <Swagger />
       </TableWrapper>
     </CustomizedTableWrapper>
   );
