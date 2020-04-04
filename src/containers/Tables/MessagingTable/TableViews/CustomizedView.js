@@ -6,7 +6,7 @@ import Swagger from "./Swagger";
 
 const FormItem = Form.Item;
 
-const expandedRowRender = () => <Swagger url="http://13.235.229.191:3000/docs/json"/>;
+const expandedRowRender = () => <Swagger url="http://13.235.229.191:3007/docs/json"/>;
 
 export default function(props) {
   const [state, setState] = React.useState({

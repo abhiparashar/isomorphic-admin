@@ -61,15 +61,15 @@ const routes = [
   },
   {
     path: 'kyc-service',
-    component: lazy(() => import('@iso/containers/Tables/TokenTabel/AntTables')),
+    component: lazy(() => import('@iso/containers/Tables/KycTable/AntTables')),
   },
   {
     path: 'profile-service',
-    component: lazy(() => import('@iso/containers/Tables/TokenTabel/AntTables')),
+    component: lazy(() => import('@iso/containers/Tables/ProfileTable/AntTables')),
   },
   {
     path: 'messaging-service',
-    component: lazy(() => import('@iso/containers/Tables/TokenTabel/AntTables')),
+    component: lazy(() => import('@iso/containers/Tables/MessagingTable/AntTables')),
   },
   {
     path: 'allFormComponent',
